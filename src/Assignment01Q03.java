@@ -8,7 +8,7 @@ public class Assignment01Q03 {
         System.out.println("The first " + x + " Fibonacci numbers are:");
 
         int[] fib = new int[x];
-        ////////////////////////////////////////////////////////////////
+
         fib[0] = 1;
         fib[1] = 1;
         for(int i = 2; i < x; i++){
@@ -26,8 +26,6 @@ public class Assignment01Q03 {
                 System.out.print(" "); // Make sure we don't print a trailing space
         }
         System.out.println();
-        
-        ////////////////////////////////////////////////////////////////
         
         System.out.println("The number of odd numbers is: " + numOdd);
     }
