@@ -3,6 +3,11 @@ public class Assignment01Q02 {
         double actualPi = Math.PI;
         double approxPi = 0;
 
+        if (args.length == 0) {
+            System.out.println("Please provide the length of the series as an argument.");
+            return;
+        }
+
         int length = Integer.parseInt(args[0]);
 
         for (int i = 0; i < length; i++) {
