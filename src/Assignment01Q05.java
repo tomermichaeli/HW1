@@ -5,13 +5,13 @@ public class Assignment01Q05 {
         }
         
         int n = m.length;
-        int[] distance_from_i = new int[n];
+        int[] distanceFromI = new int[n];
         int[] queue = new int[n];
 
         for (int k = 0; k < n; k++) {
-            distance_from_i[k] = -1;
+            distanceFromI[k] = -1;
         }
-        distance_from_i[i] = 0;
+        distanceFromI[i] = 0;
 
         int head = 0;
         int tail = 0;
@@ -24,10 +24,10 @@ public class Assignment01Q05 {
             head++;
 
             for (int neighbor = 0; neighbor < n; neighbor++) {
-                if (m[current][neighbor] == 1 && distance_from_i[neighbor] == -1) {
-                    distance_from_i[neighbor] = distance_from_i[current] + 1;
+                if (m[current][neighbor] == 1 && distanceFromI[neighbor] == -1) {
+                    distanceFromI[neighbor] = distanceFromI[current] + 1;
                     if (neighbor == j) {
-                        return distance_from_i[neighbor];
+                        return distanceFromI[neighbor];
                     }
                     queue[tail] = neighbor;
                     tail++;
